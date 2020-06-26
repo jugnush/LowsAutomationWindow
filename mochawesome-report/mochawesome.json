@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-06-26T06:30:38.899Z",
+    "end": "2020-06-26T06:31:29.759Z",
+    "duration": 50860,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "586abaad-9bcc-4955-b193-d22c06c44a83",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "24af20e1-cb3a-4910-ae36-77121a938e5d",
+        "title": "Lowes automated testing",
+        "fullFile": "C:\\selenium-all-browser\\Automation-With-Selenium-And-Node.js-master\\test\\homePage.test.js",
+        "file": "\\test\\homePage.test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "Lowes automated testing \"before each\" hook",
+            "timedOut": false,
+            "duration": 5221,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "page = new Page();\ndriver = page.driver;\nawait page.visit('https://www.lowes.com/');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b53d8aba-c604-4874-8d83-078356c713b7",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "Lowes automated testing \"after each\" hook",
+            "timedOut": false,
+            "duration": 5183,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "await page.quit();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "13cc6fdb-75d5-4dcc-9dd1-63344148a531",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "Open Lowes website",
+            "fullTitle": "Lowes automated testing Open Lowes website",
+            "timedOut": false,
+            "duration": 15153,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "const result = await page.findInputAndButton();\nexpect(result.inputEnabled).to.equal(true);\nexpect(result.buttonText).to.include('Allow Location Access');",
+            "err": {
+              "message": "TimeoutError: Looking for element\nWait timed out after 15150ms",
+              "estack": "TimeoutError: Looking for element\nWait timed out after 15150ms\n    at C:\\selenium-all-browser\\Automation-With-Selenium-And-Node.js-master\\node_modules\\selenium-webdriver\\lib\\webdriver.js:842:17\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            },
+            "isRoot": false,
+            "uuid": "10b82e51-5443-459b-8535-b7e81a401d25",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "put keyword in search box and click search button",
+            "fullTitle": "Lowes automated testing put keyword in search box and click search button",
+            "timedOut": false,
+            "duration": 15200,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "const result = await page.submitKeywordAndGetResult();\nexpect(result.length).to.be.above(10);",
+            "err": {
+              "message": "TimeoutError: Looking for element\nWait timed out after 15200ms",
+              "estack": "TimeoutError: Looking for element\nWait timed out after 15200ms\n    at C:\\selenium-all-browser\\Automation-With-Selenium-And-Node.js-master\\node_modules\\selenium-webdriver\\lib\\webdriver.js:842:17\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            },
+            "isRoot": false,
+            "uuid": "fbcac303-0d77-4c0e-a738-2899c21169df",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "10b82e51-5443-459b-8535-b7e81a401d25",
+          "fbcac303-0d77-4c0e-a738-2899c21169df"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 30353,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 50000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2020
+}

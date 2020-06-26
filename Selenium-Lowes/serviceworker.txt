@@ -1,0 +1,11 @@
+8
+
+https://bewisse.com/
+https://bewisse.com/sw.js
+true
+{5e5523c5-1cfc-4c50-9a23-e1b2ca6cf389}
+0
+1593145885718380
+1593145885720379
+1593145883857061
+#
